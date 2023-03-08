@@ -3,6 +3,7 @@ from .models import Post, Group
 
 POST_QUANTITY = 10
 
+
 def index(request):
     posts = Post.objects.all()[:10]
     context = {
