@@ -17,9 +17,6 @@ class PostAdmin(admin.ModelAdmin):
     empty_value_display = '-пусто-'
 
 
-admin.site.register(Post, PostAdmin)
-
-
 class GroupAdmin(admin.ModelAdmin):
     list_display = (
         'pk',
@@ -33,3 +30,4 @@ class GroupAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Group)
+admin.site.register(Post, PostAdmin)
