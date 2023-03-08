@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post, Group
 
+
 POST_QUANTITY = 10
 
 
 def index(request):
-    posts = Post.objects.all()[:10]
+    posts = Post.objects.all()[:POST_QUANTITY]
     context = {
         'posts': posts,
     }
