@@ -3,7 +3,7 @@
     {% endblock %}
     {% block content %}
 
-    <h1 style="margin: 5px 45px 5px 25px;">Последние обновления на сайте</h1>
+    <h1 class="my-div">Последние обновления на сайте</h1>
     {% for post in posts %}
     <div class="my-div">
     <li>Автор: {{ post.author.get_full_name }}</li>

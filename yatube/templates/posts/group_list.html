@@ -2,9 +2,9 @@
     {% block title %}
     {% endblock %}
     {% block content %}
-    <h1 style="margin: 5px 45px 5px 25px;">Лев Толстой – зеркало русской революции.</h1>
+    <h1 class="my-div">Лев Толстой – зеркало русской революции.</h1>
     {% for post in posts %}
-    <div style="margin: 5px 45px 5px 25px;">
+    <div class="my-div">
       <li>Автор: {{ post.author.get_full_name }}</li>
       <li>Дата публикации: {{ post.pub_date|date:"d E Y"}}</li>
       <p>{{ post.text }}</p>
