@@ -2,9 +2,9 @@
     {% block title %}
     {% endblock %}
     {% block content %}
-    <h1 class="my-div">Лев Толстой – зеркало русской революции.</h1>
+    <h1 class=class="card-header">Лев Толстой – зеркало русской революции.</h1>
     {% for post in posts %}
-    <div class="my-div">
+    <div class="card-subtitle">
       <li>Автор: {{ post.author.get_full_name }}</li>
       <li>Дата публикации: {{ post.pub_date|date:"d E Y"}}</li>
       <p>{{ post.text }}</p>
